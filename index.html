@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unwind0440-source — Портфолио</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/319813782?v=4" alt="Аватар">
+      <h1>Привет, я <span class="highlight">unwind0440-source</span></h1>
+      <p class="subtitle">Разработчик · Строю вещи для веба</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#projects">Мои проекты</a>
+        <a class="btn btn-outline" href="https://github.com/unwind0440-source" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Проекты</h2>
+        <div id="projects-grid" class="grid" aria-live="polite">
+          <div class="card skeleton"></div>
+          <div class="card skeleton"></div>
+          <div class="card skeleton"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <h2>Обо мне</h2>
+        <p>
+          Я разработчик, который любит создавать простые и полезные вещи для веба.
+          Этот сайт собран на чистом HTML/CSS/JS и задеплоен на Vercel.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Контакты</h2>
+        <form id="contact-form" novalidate>
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Ваше имя">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Расскажите о вашей идее..."></textarea>
+
+          <button type="submit" class="btn btn-primary">Отправить</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 unwind0440-source · Сделано с ❤ и деплоем на Vercel</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
